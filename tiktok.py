@@ -38,7 +38,7 @@ while True:
     req = rr.get(url, headers=headers)
     if req.status_code == 404:
         print(f'{user} : Available')
-        with open('Avialable.txt',"a") as Available:
+        with open('Available.txt',"a") as Available:
             Available.write(user+'\n')
     elif req.status_code == 200:
         print(f'{user} : Not Available')
