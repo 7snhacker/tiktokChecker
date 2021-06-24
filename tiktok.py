@@ -30,6 +30,7 @@ headers = {
 times = float(input('sleep : '))
 us = open('username.txt','r')
 while True:
+    time.sleep(times)
     user = us.readline().split("\n")[0]
     url = f"https://www.tiktok.com/@{user}"
     req = rr.get(url,headers=headers)
